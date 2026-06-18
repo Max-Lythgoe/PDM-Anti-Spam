@@ -1,0 +1,10 @@
+# Changelog
+
+## 1.0.1 | June 3, 2026
+
+- Fixed issue where model selection in "AI Provider" did not show for OpenRouter provider if on WordPress <7.0.
+- Forked from GF Spam Hexer by Gravity Wiz, rebranded as PDM Anti-Spam by Performance Driven Marketing.
+
+## 1.0 | June 3, 2026
+
+- A powerful hex against dark submissions.

@@ -1,0 +1,44 @@
+/**
+ * Nested Settings Component Styles
+ *
+ * Used for child/nested settings that appear indented with a left border.
+ * Common use cases: cookie duration settings, conditional options, etc.
+ */
+
+.nested-settings {
+	margin-top: 0;
+	margin-left: 10px;
+	padding: 12px;
+	border-left: 2px solid #ddd;
+    margin-bottom: 12px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+/* Animation for when nested settings appear */
+.nested-settings--animated {
+	animation: nestedSettingsFadeIn 0.2s ease;
+}
+
+@keyframes nestedSettingsFadeIn {
+	from {
+		opacity: 0;
+		transform: translateX(-8px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* Spacing between child elements */
+.nested-settings > * + * {
+	margin-top: 12px;
+}
+
+/* Remove top margin from first child */
+.nested-settings > *:first-child {
+	margin-top: 0;
+}

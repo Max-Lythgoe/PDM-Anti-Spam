@@ -1,0 +1,51 @@
+/**
+ * Spinner Component Styles
+ *
+ * Matches Gravity Forms / WordPress admin styling.
+ */
+
+/* Base Spinner */
+.gpm-spinner {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gpm-spinner__circle {
+	display: block;
+	border: 3px solid #e0e0e0;
+	border-top-color: #007cba;
+	border-radius: 50%;
+	animation: gpmSpinnerRotate 0.8s linear infinite;
+}
+
+/* Sizes */
+.gpm-spinner--small .gpm-spinner__circle {
+	width: 16px;
+	height: 16px;
+	border-width: 2px;
+}
+
+.gpm-spinner--medium .gpm-spinner__circle {
+	width: 24px;
+	height: 24px;
+	border-width: 3px;
+}
+
+.gpm-spinner--large .gpm-spinner__circle {
+	width: 32px;
+	height: 32px;
+	border-width: 3px;
+}
+
+/* Animation */
+@keyframes gpmSpinnerRotate {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Gravity Forms Admin Context */
+body.gform-admin-screen .gpm-spinner__circle {
+	border-top-color: #3985b7;
+}

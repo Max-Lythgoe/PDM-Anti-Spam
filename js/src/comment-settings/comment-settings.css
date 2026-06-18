@@ -1,0 +1,111 @@
+/**
+ * Comment Settings Styles
+ *
+ * Layout and component styles for the WordPress comment spam protection
+ * settings page (options-discussion.php).
+ */
+
+/* ============================================================================
+   Comment Settings Layout
+   ============================================================================ */
+
+.gfsh-comment-settings {
+	max-width: 900px;
+	margin-top: 10px;
+}
+
+.gfsh-comment-settings__main {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+/* ============================================================================
+   AI Provider Status — inside AI technique card
+   ============================================================================ */
+
+.gfsh-ai-provider-status {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.gfsh-ai-provider-status__notice {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	padding: 10px 12px;
+	background: #fff8e5;
+	border: 1px solid #f0c33c;
+	border-radius: 4px;
+}
+
+.gfsh-ai-provider-status__notice-icon {
+	width: 18px;
+	height: 18px;
+	flex-shrink: 0;
+	color: #996800;
+	margin-top: 1px;
+}
+
+.gfsh-ai-provider-status__notice-text {
+	font-size: 13px;
+	color: #1d2327;
+	margin: 0 0 8px 0;
+}
+
+.gfsh-ai-provider-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 13px;
+	color: #2271b1;
+	text-decoration: none;
+}
+
+.gfsh-ai-provider-link:hover {
+	color: #135e96;
+	text-decoration: underline;
+}
+
+/* ============================================================================
+   WP TabPanel spacing
+   ============================================================================ */
+
+/* Add breathing room below the WP TabPanel component on the comment settings page */
+.gfsh-comment-settings .components-tab-panel__tabs {
+	margin-bottom: 16px;
+}
+
+/* ============================================================================
+   WP SettingsPanel header (TechniqueCard in WP context)
+   ============================================================================ */
+
+/* Render the custom ReactNode header above PanelBody with matching chrome */
+.gfsh-inline-icon {
+	width: 14px;
+	height: 14px;
+	flex-shrink: 0;
+	color: currentColor;
+	vertical-align: -0.125em;
+}
+
+/* ============================================================================
+   RangeControl spacing
+   ============================================================================ */
+
+/* Add bottom margin after the outer BaseControl that wraps a RangeControl */
+.gfsh-comment-settings .components-base-control:has(.components-range-control) {
+	margin-bottom: 16px;
+}
+
+/* ============================================================================
+   Info modal notice icon
+   ============================================================================ */
+
+.gfsh-info-modal__notice-icon {
+	width: 18px;
+	height: 18px;
+	flex-shrink: 0;
+	color: #996800;
+	margin-top: 1px;
+}

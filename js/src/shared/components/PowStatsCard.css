@@ -1,0 +1,195 @@
+/**
+ * PoW Stats Card Styles
+ *
+ * Styles for the Proof of Work performance detail card:
+ * solve time rows, difficulty distribution bars, challenge source split,
+ * and failure signals. Uses the shared .gfsh-detail-card pattern.
+ */
+
+/* ============================================================================
+   Detail Card — shared base used by PowStatsCard and AiStatsCard
+   ============================================================================ */
+
+/* Border/shadow/padding now provided by gform-settings-panel via SettingsPanel */
+.gfsh-detail-card {
+	padding: 0;
+}
+
+/* GF legend replaces the old h4 title — keep bottom margin for content spacing */
+.gfsh-detail-card .gform-settings-panel__title {
+	margin-bottom: 12px;
+}
+
+/* Mini stat strip — headline numbers at the top of each detail card */
+.gfsh-detail-card__stats {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+	margin-bottom: 12px;
+}
+
+.gfsh-detail-card__stat {
+	background: #f6f7f7;
+	border: 1px solid #e3e6ef;
+	border-radius: 3px;
+	padding: 8px 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.gfsh-detail-card__stat-value {
+	font-size: 18px;
+	font-weight: 700;
+	color: #1d2327;
+	line-height: 1.2;
+}
+
+.gfsh-detail-card__stat-label {
+	font-size: 10px;
+	font-weight: 600;
+	color: #646970;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.gfsh-detail-card__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: calc( .8125rem / 2 ) 0;
+	font-size: 13px;
+	color: #1d2327;
+}
+
+.gfsh-detail-card__row-label {
+	color: #646970;
+	font-size: 12px;
+}
+
+.gfsh-detail-card__row-value {
+	font-weight: 500;
+}
+
+.gfsh-detail-card__row-value--clean {
+	color: #1a7a1a;
+}
+
+.gfsh-detail-card__row-value--spam {
+	color: #b32d2e;
+}
+
+.gfsh-detail-card__row-value--warn {
+	color: #996800;
+}
+
+.gfsh-detail-card__empty {
+	color: #646970;
+	font-size: 12px;
+	margin: 0;
+}
+
+.gfsh-detail-card__section {
+	margin-top: .8125rem;
+	padding-top: .8125rem;
+	border-top: 1px solid #e3e6ef;
+}
+
+.gfsh-detail-card__section-title {
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	margin: 0 0 .40625rem;
+}
+
+/* ============================================================================
+   Collapsible Details — native <details> element
+   ============================================================================ */
+
+.gfsh-detail-card__details {
+	margin-top: .8125rem;
+	padding-top: .8125rem;
+	border-top: 1px solid #e3e6ef;
+}
+
+.gfsh-detail-card__details-toggle {
+	font-size: 12px;
+	font-weight: 600;
+	color: #2271b1;
+	cursor: pointer;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	user-select: none;
+}
+
+.gfsh-detail-card__details-toggle::-webkit-details-marker {
+	display: none;
+}
+
+.gfsh-detail-card__details-toggle::before {
+	content: '▸';
+	font-size: 18px;
+	transition: transform 0.15s ease;
+	margin-top: -2px;
+}
+
+.gfsh-detail-card__details[open] > .gfsh-detail-card__details-toggle::before {
+	transform: rotate(90deg);
+}
+
+.gfsh-detail-card__details-toggle:hover {
+	color: #135e96;
+}
+
+.gfsh-detail-card__details[open] > .gfsh-detail-card__details-toggle {
+	margin-bottom: 8px;
+}
+
+/* ============================================================================
+   Difficulty Distribution Bars
+   ============================================================================ */
+
+.gfsh-difficulty-bars {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.gfsh-difficulty-bar {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 12px;
+}
+
+.gfsh-difficulty-bar__label {
+	width: 50px;
+	color: #646970;
+	flex-shrink: 0;
+}
+
+.gfsh-difficulty-bar__track {
+	flex: 1;
+	height: 8px;
+	background: #f0f0f1;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.gfsh-difficulty-bar__fill {
+	height: 100%;
+	background: #2271b1;
+	border-radius: 4px;
+	transition: width 0.3s ease;
+}
+
+.gfsh-difficulty-bar__count {
+	width: 36px;
+	color: #1d2327;
+	font-weight: 500;
+	text-align: right;
+	flex-shrink: 0;
+}

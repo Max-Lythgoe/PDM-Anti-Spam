@@ -1,0 +1,34 @@
+/**
+ * NumberInput Component Styles
+ *
+ * Styles for the number input with optional suffix.
+ * For inputs with unit selection, use UnitControl instead.
+ */
+
+.gfsh-number-input__wrapper {
+	display: inline-flex;
+	align-items: stretch;
+	position: relative;
+	max-width: 200px;
+}
+
+.gform-settings-panel__content .gfsh-number-input__wrapper input[type='number'] {
+	flex: 0 0 auto;
+	width: 100px;
+}
+
+/* Input with suffix - add right padding for the suffix */
+.gform-settings-panel__content .gfsh-number-input__wrapper input.gfsh-number-input--with-suffix {
+	padding-right: 40px;
+}
+
+/* Static suffix display */
+.gfsh-number-input__suffix {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #6b7280;
+	font-size: 13px;
+	pointer-events: none;
+}

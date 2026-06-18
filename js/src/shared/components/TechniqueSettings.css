@@ -1,0 +1,192 @@
+/**
+ * Technique Settings Styles
+ *
+ * Co-located with TechniqueSettings.tsx.
+ * Shared layout and AI section styles used by both plugin and form settings.
+ *
+ * NOTE: Field spacing, labels, and descriptions are handled by GF's native
+ * `.gform-settings-panel__content` cascade. Only layout and section dividers
+ * need custom styles here.
+ */
+
+/* ============================================================================
+   Technique Settings Container
+   ============================================================================ */
+
+.gfsh-technique-settings {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 100%;
+}
+
+/* ============================================================================
+   AI Settings Sections — structured content inside TechniqueCard body
+   ============================================================================ */
+
+.gfsh-ai-section {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.gfsh-ai-section__title {
+    display: none;
+	font-size: 13px;
+	font-weight: 600;
+	color: #1d2327;
+	margin: 0 0 12px 0;
+	padding: 0;
+}
+
+/* ============================================================================
+   AI Inputs — max-width constraint for selects, passwords, text inputs
+   ============================================================================ */
+
+.gfsh-ai-input {
+	max-width: 400px;
+	width: 100%;
+}
+
+textarea.gfsh-ai-input {
+	max-width: 100%;
+}
+
+/* Custom model text input (shown when "Custom…" selected) */
+.gfsh-ai-custom-model-input {
+	margin-top: 8px;
+}
+
+/* ============================================================================
+   WP AI Client Status Indicator
+   ============================================================================ */
+
+.gfsh-connector-status {
+	margin: 8px 0 0;
+}
+
+.gfsh-connector-status p {
+	padding: 8px 12px;
+	border-radius: 4px;
+	font-size: 13px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.gfsh-connector-status--connected {
+	background: #edfaef;
+	border: 1px solid #b8e6be;
+	color: #1a5e20;
+}
+
+.gfsh-connector-status--unavailable {
+	background: #fff8e1;
+	border: 1px solid #ffe082;
+	color: #6d4c00;
+}
+
+/* ============================================================================
+   AI Context Preview ("What the AI sees")
+   ============================================================================ */
+
+.gfsh-ai-context-preview {
+	background: #f6f7f7;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	padding: 12px 16px;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+.gfsh-ai-context-preview__item {
+	display: flex;
+	gap: 8px;
+	line-height: 1.6;
+}
+
+.gfsh-ai-context-preview__item + .gfsh-ai-context-preview__item {
+	margin-top: 4px;
+}
+
+.gfsh-ai-context-preview__label {
+	color: #646970;
+	flex-shrink: 0;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+.gfsh-ai-context-preview__value {
+	color: #1d2327;
+	word-break: break-word;
+}
+
+/* ============================================================================
+   AI Provider Trigger Button
+   ============================================================================ */
+
+.gfsh-ai-provider-trigger {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 16px;
+	border: 1px solid #2271b1;
+	border-radius: 4px;
+	background: #f6f7f7;
+	color: #2271b1;
+	font-size: 13px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background 0.15s, color 0.15s;
+}
+
+.gfsh-ai-provider-trigger:hover {
+	background: #2271b1;
+	color: #fff;
+}
+
+.gfsh-ai-provider-trigger:focus-visible {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
+}
+
+/* AI Provider Modal note */
+.gfsh-ai-provider-modal__note {
+	margin: 0 0 16px;
+	padding: 8px 12px;
+	background: #f0f6fc;
+	border-left: 3px solid #2271b1;
+	font-size: 13px;
+	line-height: 1.5;
+	color: #1d2327;
+	border-radius: 0 4px 4px 0;
+}
+
+/* AI Provider link (for comment settings → plugin settings) */
+.gfsh-ai-provider-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 13px;
+	color: #2271b1;
+	text-decoration: none;
+}
+
+.gfsh-ai-provider-link:hover {
+	color: #135e96;
+	text-decoration: underline;
+}
+
+/* ============================================================================
+   Info Notes (auto-escalation, etc.)
+   ============================================================================ */
+
+.gfsh-info-note {
+	margin: 8px 0 0;
+	padding: 8px 12px;
+	background: #f0f6fc;
+	border-left: 3px solid #2271b1;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #1d2327;
+	border-radius: 0 4px 4px 0;
+}

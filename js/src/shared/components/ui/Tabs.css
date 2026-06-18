@@ -1,0 +1,76 @@
+/**
+ * Tabs Component Styles
+ *
+ * Uses GF's native `.gform-settings-tabs__navigation` classes for the tab list.
+ * Only the panel container and animation need custom styles.
+ */
+
+/* ============================================================================
+   Tab Panels — GF doesn't have a React panel pattern, so this is custom
+   ============================================================================ */
+
+.gfsh-tabs__panels {
+	padding: 0;
+}
+
+.gfsh-tabs__panel {
+	display: none;
+	animation: gfshTabFadeIn 0.2s ease;
+}
+
+.gfsh-tabs__panel--active {
+	display: block;
+}
+
+@keyframes gfshTabFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-4px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* ============================================================================
+   Tab navigation spacing
+   ============================================================================ */
+
+.gfsh-tabs .gform-settings-tabs__navigation {
+	margin-bottom: 16px;
+}
+
+.gfsh-tabs .gform-settings-tabs__navigation a:focus {
+	box-shadow: none;
+}
+
+/* Tab SVG icons */
+.gfsh-tabs__tab-icon {
+	display: inline-flex;
+	align-items: center;
+	margin-right: 6px;
+	vertical-align: middle;
+}
+
+.gfsh-tabs__tab-icon svg {
+	width: 14px;
+	height: 14px;
+}
+
+/* ============================================================================
+   Responsive
+   ============================================================================ */
+
+@media (max-width: 600px) {
+	.gfsh-tabs .gform-settings-tabs__navigation {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.gfsh-tabs .gform-settings-tabs__navigation a {
+		padding-left: 0.875rem;
+		padding-right: 0.875rem;
+		font-size: 12px;
+	}
+}

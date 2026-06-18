@@ -1,0 +1,106 @@
+/**
+ * TechniqueCard Component Styles
+ *
+ * Custom header layout for technique configuration cards.
+ * Panel chrome (border, shadow, radius, grid-column, content border-top/padding)
+ * is inherited from GF's `.gform-settings-panel` via SettingsPanel component.
+ *
+ * Only the header area and override chip need custom styling.
+ */
+
+/* Card Header — custom layout for icon + info + chip + toggle
+   Overrides GF's .gform-settings-panel__header defaults (justify-content,
+   line-height, padding) since our header has a richer structure. */
+.gfsh-technique-card .gform-settings-panel__header {
+	justify-content: flex-start;
+	line-height: normal;
+	padding: 0;
+}
+
+.gfsh-technique-card .gform-settings-field__header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: fit-content;
+}
+
+.gfsh-technique-card__header {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 14px 16px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.gfsh-technique-card__icon {
+	font-size: 20px;
+	line-height: 1;
+	flex-shrink: 0;
+}
+
+.gfsh-technique-card__icon svg {
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+
+/* SVG icon class used on technique icons (PoW, AI, Bypass) */
+.gfsh-technique-icon {
+	width: 20px;
+	height: 20px;
+	flex-shrink: 0;
+	color: currentColor;
+}
+
+.gfsh-technique-card__info {
+	flex: 1;
+	min-width: 0;
+}
+
+.gfsh-technique-card__name {
+	font-size: 14px;
+	font-weight: 600;
+	color: #1d2327;
+	line-height: 1.4;
+}
+
+.gfsh-technique-card__description {
+	font-size: 12px;
+	color: #646970;
+	line-height: 1.4;
+	margin-top: 2px;
+}
+
+/* "How it works" link inside the description line */
+.gfsh-technique-card__info-link {
+	background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	font-size: 12px;
+	color: #2271b1;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.gfsh-technique-card__info-link:hover {
+	color: #135e96;
+	text-decoration: underline;
+}
+
+.gfsh-technique-card__info-link:focus {
+	outline: 1px dotted #2271b1;
+	outline-offset: 2px;
+}
+
+.gfsh-technique-card__toggle {
+	flex-shrink: 0;
+}
+
+/* Content spacing inside the GF panel content area */
+.gfsh-technique-card .gform-settings-panel__content > * + * {
+	margin-top: 16px;
+}
+
+

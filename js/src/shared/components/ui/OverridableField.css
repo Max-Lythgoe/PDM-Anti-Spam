@@ -1,0 +1,68 @@
+/**
+ * OverridableField Reset Button Styles
+ *
+ * Inline "↩ Reset to global" button rendered as the labelAction
+ * inside a SettingsField header when a form-level override is active.
+ */
+
+.gfsh-overridable-field__reset {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 2px 8px;
+	border: 1px solid transparent;
+	background: none;
+	color: #2271b1;
+	font-size: 12px;
+	cursor: pointer;
+	border-radius: 3px;
+	transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.gfsh-overridable-field__reset:hover {
+	background: #f0f6fc;
+	border-color: #c5d9ed;
+}
+
+.gfsh-overridable-field__reset:focus-visible {
+	outline: 2px solid #2271b1;
+	outline-offset: 1px;
+}
+
+.gfsh-overridable-field__reset-icon {
+	line-height: 1;
+}
+
+.gfsh-overridable-field__reset-text {
+	font-size: 11px;
+}
+
+/* Gravity Forms Admin Context */
+body.gform-admin-screen .gfsh-overridable-field__reset {
+	color: #3985b7;
+}
+
+body.gform-admin-screen .gfsh-overridable-field__reset:hover {
+	background: #e8f4fb;
+	border-color: transparent;
+}
+
+/* Label-action slot alignment inside GF settings field header */
+.gform-settings-field__label-action {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+
+/* Label-action slot alignment inside WP BaseControl header */
+.gfsh-settings-field-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.gfsh-settings-field-header__action {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}

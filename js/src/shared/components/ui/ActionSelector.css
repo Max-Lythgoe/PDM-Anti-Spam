@@ -1,0 +1,40 @@
+/**
+ * Action Selector Styles
+ *
+ * Co-located with ActionSelector.tsx.
+ * Previously duplicated in both form-settings.css and plugin-settings.css.
+ */
+
+.gfsh-action-selector__option {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+}
+
+/* Make the action selector buttons span wider and look more prominent */
+.gfsh-technique-card .gform-settings-panel__content .gfsh-segmented-control .gfsh-segmented-control__buttons,
+.gfsh-technique-card .gform-settings-panel__content > .gfsh-segmented-control .gfsh-segmented-control__buttons {
+	display: flex;
+	width: 100%;
+	max-width: fit-content;
+}
+
+.gfsh-technique-card .gform-settings-panel__content .gfsh-segmented-control .gfsh-segmented-control__button,
+.gfsh-technique-card .gform-settings-panel__content > .gfsh-segmented-control .gfsh-segmented-control__button {
+	flex: 1;
+	padding: 8px 24px;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.gfsh-technique-card .gform-settings-panel__content > .gfsh-segmented-control {
+	margin-bottom: 4px;
+}
+
+/* Spacing after the action selector in all themes (WP ToggleGroupControl has no
+   bottom margin by default; GF theme already gets spacing via the rule above but
+   this wrapper ensures consistent gap before the next control). */
+.gfsh-action-selector {
+	margin-bottom: 16px;
+}

@@ -1,0 +1,42 @@
+/**
+ * Protection Level Selector Styles
+ *
+ * Co-located with ProtectionLevelSelector.tsx.
+ * Previously duplicated in both form-settings.css and plugin-settings.css.
+ */
+
+.gfsh-protection-level-selector {
+	margin-bottom: 12px;
+}
+
+.gfsh-protection-level-selector__description {
+	margin-top: 8px;
+	padding: 8px 12px;
+	background: #f9f9f9;
+	border-radius: 4px;
+}
+
+.gfsh-protection-level-selector__short-desc {
+	font-size: 13px;
+	font-weight: 500;
+	color: #1d2327;
+	margin: 0 0 4px;
+}
+
+.gfsh-protection-level-selector__timing {
+	font-size: 12px;
+	color: #646970;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.gfsh-protection-level-selector__option {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+}
+
+/* Protection level badge in accessibility mode options */
+.gfsh-protection-level-badge {
+	margin-left: 8px;
+}

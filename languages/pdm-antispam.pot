@@ -1,0 +1,931 @@
+# Copyright (C) 2026 Performance Driven Marketing
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: PDM Anti-Spam 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cloned-perk-o0CNI5iX92\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-03T18:24:59+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: pdm-antispam\n"
+
+#. Plugin Name of the plugin
+#: pdm-antispam.php
+#: class-pdm-antispam.php:586
+msgid "PDM Anti-Spam"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: pdm-antispam.php
+msgid "https://performancedrivenmarketing.com"
+msgstr ""
+
+#. Description of the plugin
+#: pdm-antispam.php
+msgid "Protect your forms and comments with an invisible hex against spam."
+msgstr ""
+
+#. Author of the plugin
+#: pdm-antispam.php
+msgid "Performance Driven Marketing"
+msgstr ""
+
+#. Author URI of the plugin
+#: pdm-antispam.php
+msgid "https://performancedrivenmarketing.com"
+msgstr ""
+
+#: class-pdm-antispam.php:787
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Proof of Work"
+msgstr ""
+
+#: class-pdm-antispam.php:788
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "AI Classification"
+msgstr ""
+
+#. translators: 1: technique name, 2: error details
+#: class-pdm-antispam.php:803
+msgid "%1$s was skipped due to an error: %2$s"
+msgstr ""
+
+#: class-pdm-antispam.php:875
+msgid "Spam Analysis"
+msgstr ""
+
+#: class-pdm-antispam.php:881
+msgid "Spam Action"
+msgstr ""
+
+#: class-pdm-antispam.php:913
+#: class-pdm-antispam.php:918
+#: class-pdm-antispam.php:935
+msgid "Spam Protection"
+msgstr ""
+
+#: class-pdm-antispam.php:923
+msgid "Use Global Setting"
+msgstr ""
+
+#: class-pdm-antispam.php:927
+msgid "Enabled"
+msgstr ""
+
+#: class-pdm-antispam.php:931
+msgid "Disabled"
+msgstr ""
+
+#: class-pdm-antispam.php:936
+msgid "Choose whether to use the global setting, explicitly enable, or disable spam protection for this form."
+msgstr ""
+
+#: class-pdm-antispam.php:999
+#: class-pdm-antispam.php:1150
+msgid "Loading settings..."
+msgstr ""
+
+#: class-pdm-antispam.php:1036
+msgid "General Settings"
+msgstr ""
+
+#: class-pdm-antispam.php:1037
+msgid "Configure the default spam protection settings for all forms."
+msgstr ""
+
+#: class-pdm-antispam.php:1043
+#: class-pdm-antispam.php:1047
+msgid "Enable Spam Protection"
+msgstr ""
+
+#: class-pdm-antispam.php:1045
+msgid "Enable GF Spam Hexer globally"
+msgstr ""
+
+#: class-pdm-antispam.php:1048
+msgid "When enabled, spam protection is active on all forms unless overridden in individual form settings."
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:130
+#: includes/admin/trait-analysis-renderer.php:298
+msgid "SPAM"
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:130
+#: includes/admin/trait-analysis-renderer.php:298
+msgid "OK"
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:203
+msgid "Action:"
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:209
+msgid "Techniques:"
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:231
+msgid "Signals:"
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:257
+msgid "Flagged by:"
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:258
+msgid "Unknown"
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:263
+msgid "Reason:"
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:268
+msgid "Flagged by another spam filter before Spam Hexer ran."
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:285
+msgid "Bypassed for logged-in user:"
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:302
+#: includes/admin/trait-analysis-renderer.php:129
+msgid "External Filter"
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:303
+msgid "Flagged by another spam filter"
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:323
+#: includes/admin/trait-analysis-renderer.php:189
+msgid "Logged-in User"
+msgstr ""
+
+#: includes/admin/class-entry-list-column.php:328
+msgid "—"
+msgstr ""
+
+#: includes/admin/class-entry-meta-box.php:46
+#: includes/comments/class-comment-admin.php:42
+msgid "Spam Hexer Analysis"
+msgstr ""
+
+#: includes/admin/class-entry-meta-box.php:79
+msgid "No spam analysis data available."
+msgstr ""
+
+#: includes/admin/trait-analysis-renderer.php:107
+#: includes/admin/trait-analysis-renderer.php:435
+msgid "Pre-flagged"
+msgstr ""
+
+#: includes/admin/trait-analysis-renderer.php:139
+msgid "Flagged before Spam Hexer ran"
+msgstr ""
+
+#: includes/admin/trait-analysis-renderer.php:168
+#: includes/admin/trait-analysis-renderer.php:438
+msgid "Bypassed"
+msgstr ""
+
+#: includes/admin/trait-analysis-renderer.php:379
+msgid "Signals"
+msgstr ""
+
+#: includes/admin/trait-analysis-renderer.php:441
+#: includes/admin/trait-analysis-renderer.php:485
+msgid "Rejected"
+msgstr ""
+
+#: includes/admin/trait-analysis-renderer.php:444
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Spam"
+msgstr ""
+
+#: includes/admin/trait-analysis-renderer.php:447
+#: includes/admin/trait-analysis-renderer.php:546
+msgid "Clean"
+msgstr ""
+
+#: includes/admin/trait-analysis-renderer.php:483
+msgid "Allowed"
+msgstr ""
+
+#: includes/admin/trait-analysis-renderer.php:484
+msgid "Marked as spam"
+msgstr ""
+
+#: includes/admin/trait-analysis-renderer.php:486
+msgid "Pre-flagged by another filter"
+msgstr ""
+
+#: includes/admin/trait-analysis-renderer.php:487
+msgid "Bypassed for logged-in user"
+msgstr ""
+
+#. translators: %s: skip reason
+#: includes/admin/trait-analysis-renderer.php:528
+msgid "Skipped (%s)"
+msgstr ""
+
+#: includes/admin/trait-analysis-renderer.php:546
+msgid "Flagged"
+msgstr ""
+
+#: includes/admin/trait-analysis-renderer.php:578
+msgid "unknown"
+msgstr ""
+
+#: includes/class-settings.php:173
+#: includes/comments/class-comment-settings.php:178
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Your submission could not be processed. Please try again."
+msgstr ""
+
+#: includes/comments/class-comment-admin.php:89
+msgid "No Spam Hexer analysis recorded for this comment."
+msgstr ""
+
+#: includes/comments/class-comment-admin.php:197
+msgid "History"
+msgstr ""
+
+#. translators: %s: human-readable time difference
+#: includes/comments/class-comment-admin.php:203
+msgid "%s ago"
+msgstr ""
+
+#. translators: %s: username
+#: includes/comments/class-comment-admin.php:256
+msgid "%s reported as spam"
+msgstr ""
+
+#: includes/comments/class-comment-admin.php:257
+msgid "Reported as spam"
+msgstr ""
+
+#. translators: %s: username
+#: includes/comments/class-comment-admin.php:262
+msgid "%s reported as not spam"
+msgstr ""
+
+#: includes/comments/class-comment-admin.php:263
+msgid "Reported as not spam"
+msgstr ""
+
+#. translators: %s: username
+#: includes/comments/class-comment-admin.php:268
+msgid "%s trashed"
+msgstr ""
+
+#: includes/comments/class-comment-admin.php:269
+msgid "Trashed"
+msgstr ""
+
+#: includes/comments/class-comment-checker.php:176
+msgid "Comment Submission Failure"
+msgstr ""
+
+#: includes/comments/class-comment-context.php:69
+msgid "WordPress Comment"
+msgstr ""
+
+#: includes/comments/class-comment-settings.php:56
+msgid "Spam Hexer Comment Protection"
+msgstr ""
+
+#: includes/comments/class-comment-settings.php:64
+msgid "Spam Hexer"
+msgstr ""
+
+#: includes/comments/class-comment-settings.php:220
+msgid "Protect your WordPress comments from spam using Proof of Work challenges and AI classification."
+msgstr ""
+
+#: includes/comments/class-comment-settings.php:238
+msgid "Protect WordPress comments with Spam Hexer"
+msgstr ""
+
+#: includes/comments/class-comment-settings.php:245
+msgid "Loading settings…"
+msgstr ""
+
+#: includes/rest/class-challenge-controller.php:107
+msgid "form_id must be a positive integer."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "How it works"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "enabled"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "disabled"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "How it works:"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Submissions without a valid proof of work are marked as spam for review. The entry is still saved."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Submissions without a valid proof of work are silently discarded. The submitter sees a fake success message."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Submissions without a valid proof of work are blocked with a visible validation error. Useful for testing."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Detected spam is marked as spam for review. The entry is saved — nothing is lost."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Detected spam is quietly discarded. The submitter sees a normal confirmation so bots don't know they were caught. No entry is created."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Detected spam is blocked with a validation error, giving the submitter a chance to correct and resubmit. No entry is created until the submission passes."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Flag as Spam"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Silent Reject"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Validation Error"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Reset to global setting"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Reset to global"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Light"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Fast for all devices. Basic bot deterrent."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Typical visitors' puzzles solve instantly. Repeat spammers' puzzles take about 1 second to solve before submitting."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Standard"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Recommended. Effective filtering without slowing down visitors."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Typical visitors' puzzles solve in under 1 second. Repeat spammers' puzzles take a few seconds to solve before submitting."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Strict"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Stronger protection. May be noticeable on older mobile devices."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Typical visitors' puzzles solve in about 1 second. Repeat spammers' puzzles take up to 10 seconds to solve before submitting."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "When someone loads your form, their browser silently solves a SHA-256 puzzle in the background — like a CAPTCHA, but invisible. Legitimate visitors never notice it. Bots have to burn real CPU time on every submission attempt."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "The puzzle difficulty is set by your protection level. Higher levels require more computation, making automated spam progressively more expensive while remaining imperceptible to real users."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Requires browsers to solve a computational puzzle before submitting. Invisible to users, expensive for bots."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Reads what was submitted and detects spam: SEO spam, phishing, gibberish, off-topic content."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Form-Specific Context (optional)"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Comment-Specific Context (optional)"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Custom Context (optional)"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Appended to your global context to help the AI understand what submissions are legitimate for this form."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Help the AI understand what types of comments are legitimate for your site."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Help the AI understand what types of submissions are legitimate for your site. This is sent with every classification request."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "e.g. This form collects job applications for our engineering team."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "e.g. This is a tech blog — comments about programming are legitimate."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "e.g. We welcome wholesale partnership inquiries and catering requests."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "When a submission fails"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Validation Message"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Shown to the visitor when their submission is blocked."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Protection Level"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "When spam is detected"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Confidence Threshold"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "AI confidence at or above this level is classified as spam. Lower = more aggressive."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Bypass Rules"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Skip spam checks for trusted users."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Bypass for Logged-In Users"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "When enabled, authenticated WordPress users skip all spam checks including Proof of Work and AI classification."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "After a comment is submitted, the content is sent to an AI model that reads what was written and classifies it as legitimate or spam. It catches SEO spam, phishing links, gibberish, and off-topic content that PoW alone can't detect — bots can solve puzzles, they just can't write convincing human content."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "After a form is submitted, the content is sent to an AI model that reads what was written and classifies it as legitimate or spam. It catches SEO spam, phishing links, gibberish, and off-topic content that PoW alone can't detect — bots can solve puzzles, they just can't write convincing human content."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Submissions are evaluated only if they passed earlier checks. Configure your AI provider in the"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "AI Provider tab"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "No solve data yet."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Solves"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Avg Time"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Passed"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Failed"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Details"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Min / Max"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Difficulty Distribution"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Challenge Source"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "REST API"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Fallback (inline)"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Failure Signals"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "No AI classification data yet."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "AI Calls"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Avg Latency"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Classified Ham"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Classified Spam"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Total Cost"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Reason Codes"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Skipped"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+msgid "No comments checked yet. Stats will appear here once comments start being processed."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+msgid "Comment Protection Overview"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Last %d days"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+msgid "Comments Checked"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+msgid "Spam Caught"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+msgid "Clean Comments"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+msgid "Spam Rate"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Settings"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Stats"
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+msgid "AI provider is not configured. AI classification will not run until a provider is set up."
+msgstr ""
+
+#: js/built/pdm-antispam-comment-settings.js:2
+msgid "Configure AI Provider in Plugin Settings"
+msgstr ""
+
+#: js/built/pdm-antispam-form-settings.js:2
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Close"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Checked"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Spam Blocked"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "% of submissions"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Clean Allowed"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "just now"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "m ago"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "h ago"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "d ago"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Per-Form Breakdown"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Form"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Rate"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Last Spam"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "No submissions checked yet. Stats will appear here once forms start receiving submissions."
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Protection Overview"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "AI Provider Mode"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "WordPress AI Client is available. Provider and API keys are managed in"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Settings → Connectors"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "WordPress AI Client is not available. Requires WordPress 7.0+ with at least one AI provider plugin active."
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "API Key"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Get a key at"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Zero Data Retention"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Only route to endpoints that do not store your prompts or responses. Providers with ZDR are also unable to train on your data. Learn more: openrouter.ai/docs/guides/features/zdr"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Enforce Zero Data Retention"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Not all models support Zero Data Retention. If your selected model does not support ZDR, OpenRouter will return an error and classification will fail. Check"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "OpenRouter's ZDR docs"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "to confirm your model is compatible."
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Preferred Model"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Model"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "The AI Client will try this model first. Leave blank to auto-select the cheapest available model."
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "OpenRouter model ID. Fast, cheap models recommended."
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Auto (cheapest available)"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Default"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Custom…"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "AI Provider"
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "These settings are shared plugin-wide across all forms and comments."
+msgstr ""
+
+#: js/built/pdm-antispam-plugin-settings.js:2
+msgid "Provider"
+msgstr ""

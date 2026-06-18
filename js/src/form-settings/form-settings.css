@@ -1,0 +1,142 @@
+/**
+ * GF Spam Hexer Form Settings Styles
+ *
+ * Base styles for the React-based settings UI.
+ * Shared by both form-settings and plugin-settings (imported from JS entry point).
+ *
+ * Component-specific styles are co-located as adjacent CSS files:
+ * - TechniqueSettings.css, TechniqueCard.css, ActionSelector.css, etc.
+ *
+ * NOTE: Field spacing, labels, and descriptions inside `.gform-settings-panel__content`
+ * are handled by GF's native admin CSS. Only structural overrides belong here.
+ */
+
+/* ============================================================================
+   Gravity Forms Field Hints (custom addition — GF doesn't have this)
+   ============================================================================ */
+
+.gform-settings-field__hint {
+	display: block;
+	margin-top: 8px;
+	color: #646970;
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+/* Remove border-top when content is the first child (no header rendered) */
+.gform-settings-panel > .gform-settings-panel__content:first-child {
+	border-top: none;
+}
+
+/* Remove gform-settings-label class styling from checkbox labels */
+input[type="checkbox"] + label.gform-settings-label {
+	font-weight: 400;
+}
+
+.gform-button svg {
+	width: 16px;
+	height: 16px;
+	margin-right: .5rem;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+
+.gp-settings-react-root {
+	grid-column: span 2;
+}
+
+/* ============================================================================
+   React Section — strip GF fieldset/legend chrome
+   ============================================================================
+   The react-settings section uses a standard GF section with an `html` field
+   so the Settings renderer handles save/postback natively. CSS removes the
+   visual fieldset wrapper so React owns the entire UI.
+   ============================================================================ */
+
+.gfsh-react-section.gform-settings-panel {
+	border: none;
+	background: none;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+}
+
+#gform-settings-section-react-settings > .gform-settings-panel__content {
+	border: 0;
+	padding: 0;
+}
+
+/* Hide the fieldset legend if GF renders one */
+#gform-settings-section-react-settings > .gform-settings-panel__title {
+	display: none;
+}
+
+/* The html field wrapper — remove GF's field chrome */
+#gform-settings-section-react-settings > .gform-settings-field {
+	margin: 0;
+	padding: 0;
+}
+
+/* ============================================================================
+   React Root Loader
+   ============================================================================ */
+
+.gp-settings-react-root__loader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	padding: 48px 24px;
+}
+
+.gp-settings-react-root__spinner {
+	width: 20px;
+	height: 20px;
+	border: 2px solid #e0e0e0;
+	border-top-color: #2271b1;
+	border-radius: 50%;
+	animation: gp-spinner-rotate 0.8s linear infinite;
+}
+
+.gp-settings-react-root__text {
+	color: #646970;
+	font-size: 14px;
+}
+
+@keyframes gp-spinner-rotate {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* ============================================================================
+   Inline Style Replacements
+   ============================================================================ */
+
+/* Timing input with suffix label (replaces inline styles) */
+.gfsh-timing-input {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.gfsh-timing-input input {
+	width: 80px;
+}
+
+.gfsh-timing-input__suffix {
+	font-size: 13px;
+	color: #50575e;
+}
+
+/* ============================================================================
+   Single-Page Layout
+   ============================================================================ */
+
+.gfsh-settings-layout {
+	width: 100%;
+}
+
+.gfsh-settings-layout .gform-settings-description {
+    margin: .5625rem 0 0;
+}

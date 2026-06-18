@@ -1,0 +1,80 @@
+/**
+ * SegmentedControl Component Styles
+ *
+ * A row of mutually exclusive buttons for small discrete ranges (e.g., 1–5).
+ * Matches Gravity Forms admin styling.
+ */
+
+.gfsh-segmented-control {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.gfsh-segmented-control__label {
+	font-size: 0.8125rem;
+	font-weight: 500;
+	color: #23282d;
+}
+
+.gfsh-segmented-control__buttons {
+	display: inline-flex;
+	white-space: nowrap;
+}
+
+.gfsh-segmented-control__button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 40px;
+	padding: 6px 12px;
+	border: 1px solid #c3c4c7;
+	margin-right: -1px;
+	background: #fff;
+	color: #50575e;
+	font-size: 13px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background 0.15s ease, color 0.15s ease;
+	line-height: 1.4;
+}
+
+.gfsh-segmented-control__button:first-child {
+	border-radius: 6px 0 0 6px;
+}
+
+.gfsh-segmented-control__button:last-child {
+	border-radius: 0 6px 6px 0;
+	margin-right: 0;
+}
+
+.gfsh-segmented-control__button:hover:not(.gfsh-segmented-control__button--active):not(:disabled) {
+	background: #f0f0f1;
+	color: #1d2327;
+}
+
+.gfsh-segmented-control__button--active {
+	background: #2271b1;
+	color: #fff;
+	border-color: #2271b1;
+	z-index: 1;
+}
+
+.gfsh-segmented-control__button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.gfsh-segmented-control__help {
+	margin: 0;
+	font-size: 12px;
+	color: #646970;
+	line-height: 1.5;
+}
+
+/* Gravity Forms Admin Context */
+body.gform-admin-screen .gfsh-segmented-control__button--active {
+	background: #3985b7;
+	border-color: #3985b7;
+}

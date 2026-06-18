@@ -1,0 +1,375 @@
+/**
+ * Entry Meta Box — Spam Hexer Analysis
+ *
+ * Styles for the spam analysis meta box on the GF entry detail page.
+ * Enqueued by Entry_Meta_Box::register() on entry detail pages.
+ */
+
+.gfsh-meta-box { font-size: 13px; }
+
+/* Score header */
+.gfsh-score-header { display: flex; align-items: center; gap: 8px; margin-bottom: .75rem; }
+.gfsh-score-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.gfsh-score-value {
+	font-size: 22px;
+	font-weight: 700;
+	font-variant-numeric: tabular-nums;
+	line-height: 1;
+}
+.gfsh-score-badge {
+	display: inline-flex;
+	align-items: center;
+	padding: 3px 10px;
+	border-radius: 12px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	line-height: 1;
+}
+.gfsh-score-badge--clean { background: #edfaef; color: #00a32a; }
+.gfsh-score-badge--flagged { background: #fef8ee; color: #9a6700; }
+.gfsh-score-badge--spam { background: #fce8e8; color: #d63638; }
+.gfsh-score-badge--rejected   { background: #f0e0e0; color: #8b1a1c; }
+.gfsh-score-badge--pre-flagged { background: #f0ecf5; color: #6b4fa2; }
+.gfsh-score-badge--bypassed    { background: #f0f0f1; color: #50575e; }
+
+.gfsh-score-bar-track {
+	height: 6px;
+	background: #f0f0f1;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.gfsh-score-bar-fill {
+	height: 100%;
+	border-radius: 3px;
+	transition: width 0.3s ease;
+}
+
+.gfsh-action-row {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	color: #646970;
+	font-size: 12px;
+}
+.gfsh-action-row .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+}
+
+/* Technique cards */
+.gfsh-techniques { display: flex; flex-direction: column; gap: 8px; }
+.gfsh-technique-card {
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	overflow: hidden;
+	background: #fff;
+}
+.gfsh-technique-card--flagged { border-color: #f0c8c8; background: #fffbfb; }
+.gfsh-technique-card--skipped { border-color: #e8e8e8; background: #fafafa; }
+
+.gfsh-technique-header {
+	display: flex;
+	align-items: center;
+	padding: 8px 10px;
+	gap: 8px;
+	cursor: default;
+}
+.gfsh-technique-header[data-expandable] { cursor: pointer; }
+.gfsh-technique-header[data-expandable]:hover { background: #f9f9f9; }
+
+.gfsh-technique-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	border-radius: 6px;
+	flex-shrink: 0;
+}
+.gfsh-technique-icon .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+}
+.gfsh-technique-icon svg {
+	width: 16px;
+	height: 16px;
+	display: block;
+}
+.gfsh-technique-icon--ok { background: #edfaef; color: #00a32a; }
+.gfsh-technique-icon--flagged { background: #fce8e8; color: #d63638; }
+.gfsh-technique-icon--skipped { background: #f0f0f1; color: #a7aaad; }
+
+.gfsh-technique-info { flex: 1; min-width: 0; }
+.gfsh-technique-name {
+	font-weight: 600;
+	font-size: 12px;
+	color: #1d2327;
+	line-height: 1.3;
+}
+.gfsh-technique-detail {
+	font-size: 11px;
+	color: #646970;
+	line-height: 1.3;
+	margin-top: 1px;
+}
+
+.gfsh-technique-score {
+	font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+	font-size: 13px;
+	font-weight: 600;
+	flex-shrink: 0;
+	font-variant-numeric: tabular-nums;
+}
+.gfsh-technique-score--ok { color: #00a32a; }
+.gfsh-technique-score--flagged { color: #d63638; }
+.gfsh-technique-score--skipped { color: #a7aaad; }
+
+.gfsh-technique-chevron {
+	flex-shrink: 0;
+	color: #a7aaad;
+	transition: transform 0.15s ease;
+}
+.gfsh-technique-chevron .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+}
+.gfsh-technique-card.is-open .gfsh-technique-chevron {
+	transform: rotate(180deg);
+}
+
+/* Technique details panel */
+.gfsh-technique-details {
+	display: none;
+	border-top: 1px solid #f0f0f1;
+	padding: 8px 10px;
+	background: #f9f9f9;
+}
+.gfsh-technique-card.is-open .gfsh-technique-details { display: block; }
+
+.gfsh-detail-grid {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 3px 10px;
+	font-size: 11px;
+}
+.gfsh-detail-label {
+	color: #646970;
+	font-weight: 500;
+	white-space: nowrap;
+}
+.gfsh-detail-value {
+	color: #1d2327;
+	font-variant-numeric: tabular-nums;
+}
+
+/* Signals footer */
+.gfsh-signals {
+	margin-top: 12px;
+	padding-top: 10px;
+	border-top: 1px solid #f0f0f1;
+}
+.gfsh-signals-label {
+	font-size: 11px;
+	font-weight: 600;
+	color: #646970;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	margin-bottom: 4px;
+}
+.gfsh-signal-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+}
+.gfsh-signal-tag {
+	display: inline-block;
+	padding: 2px 7px;
+	background: #f0f0f1;
+	border-radius: 3px;
+	font-size: 10px;
+	font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+	color: #50575e;
+}
+
+/* =========================================================================
+   Entry List Column Badge
+   ========================================================================= */
+
+.gfsh-list-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 3px 8px;
+	border-radius: 10px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.gfsh-list-badge .dashicons {
+	font-size: 12px;
+	width: 12px;
+	height: 12px;
+	line-height: 12px;
+	flex-shrink: 0;
+}
+
+.gfsh-list-badge__score {
+	font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+	font-variant-numeric: tabular-nums;
+}
+
+.gfsh-list-badge__label {
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+
+.gfsh-list-badge--clean    { background: #edfaef; color: #00a32a; }
+.gfsh-list-badge--flagged  { background: #fef8ee; color: #9a6700; }
+.gfsh-list-badge--spam     { background: #fce8e8; color: #d63638; }
+.gfsh-list-badge--rejected    { background: #f0e0e0; color: #8b1a1c; }
+.gfsh-list-badge--pre-flagged { background: #f0ecf5; color: #6b4fa2; }
+.gfsh-list-badge--bypassed    { background: #f0f0f1; color: #50575e; }
+
+/* Tooltip button wrapper — resets all button chrome */
+.gfsh-list-tooltip.gf_tooltip {
+	display: inline-flex;
+	align-items: center;
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	cursor: help;
+	font: inherit;
+    width: auto;
+}
+
+/* Suppress the GF arrow-bottom pseudo-element on our tooltip trigger */
+.gfsh-list-tooltip::before,
+.gfsh-list-tooltip::after {
+	display: none !important;
+}
+
+/* Suppress the jQuery UI hover border/outline on the trigger */
+.gfsh-list-tooltip.ui-state-hover,
+.gfsh-list-tooltip:hover,
+.gfsh-list-tooltip:focus {
+	outline: none;
+	box-shadow: none;
+	border: none;
+}
+
+/* GF tooltip popup — left-align multi-line content */
+.ui-tooltip .ui-tooltip-content {
+	text-align: left;
+}
+
+/* Per-technique rows (gfsh_result column) */
+.gfsh-list-technique { margin-bottom: 14px; }
+.gfsh-list-technique:last-child { margin-bottom: 0; }
+
+.gfsh-list-technique__header {
+	display: flex;
+	align-items: baseline;
+	gap: 5px;
+}
+
+.gfsh-list-technique__name {
+	font-size: 13px;
+	color: #1d2327;
+	white-space: nowrap;
+	flex-shrink: 0;
+}
+
+.entry_row:not(.entry_unread) .gfsh-list-technique__name {
+    color: #000;
+}
+
+.gfsh-list-technique__score {
+	font-weight: 700;
+	font-size: 13px;
+	flex-shrink: 0;
+}
+
+.gfsh-list-technique__score--ok      { color: #00a32a; }
+.gfsh-list-technique__score--flagged { color: #d63638; }
+.gfsh-list-technique__score--skipped { color: #a7aaad; }
+
+.gfsh-list-technique__detail {
+	color: #646970;
+	margin-top: 2px;
+}
+
+/* =========================================================================
+   Comment History Timeline
+   ========================================================================= */
+
+.gfsh-history-timeline {
+	margin-top: 12px;
+	padding-top: 10px;
+	border-top: 1px solid #f0f0f1;
+}
+
+.gfsh-history-label {
+	font-size: 11px;
+	font-weight: 600;
+	color: #646970;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	margin-bottom: 6px;
+}
+
+.gfsh-history-event {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 12px;
+	color: #50575e;
+	line-height: 1.4;
+	padding: 3px 0;
+}
+
+.gfsh-history-event + .gfsh-history-event {
+	border-top: 1px solid #f6f6f6;
+}
+
+.gfsh-history-icon {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	color: #a7aaad;
+	flex-shrink: 0;
+}
+
+.gfsh-history-time {
+	color: #a7aaad;
+	font-size: 11px;
+	white-space: nowrap;
+	flex-shrink: 0;
+	cursor: help;
+}
+
+.gfsh-history-sep {
+	color: #dcdcde;
+	flex-shrink: 0;
+}
+
+.gfsh-history-message {
+	color: #50575e;
+	font-size: 12px;
+}

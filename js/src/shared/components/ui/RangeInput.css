@@ -1,0 +1,195 @@
+/**
+ * RangeInput Component Styles
+ *
+ * Matches Gravity Forms / WordPress admin styling.
+ */
+
+/* Container */
+.gpm-range-input {
+	width: 100%;
+}
+
+.gpm-range-input--disabled {
+	opacity: 0.6;
+}
+
+/* Label */
+.gpm-range-input__label {
+	display: block;
+	color: #23282d;
+	font-size: 0.8125rem;
+	font-weight: 500;
+	margin-bottom: 6px;
+}
+
+/* Value badge — tracks the thumb position */
+.gpm-range-input__value {
+	position: absolute;
+	bottom: 0;
+	transform: translateX(-50%);
+	font-size: 14px;
+	font-weight: 600;
+	color: #007cba;
+	background: #f0f6fc;
+	padding: 2px 10px;
+	border-radius: 4px;
+	white-space: nowrap;
+	pointer-events: none;
+}
+
+/* Track Container */
+.gpm-range-input__track-container {
+	position: relative;
+	padding: 0 0 34px;
+}
+
+/* Range Slider */
+.gpm-range-input__slider {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 8px;
+	border-radius: 4px;
+	background: linear-gradient(
+		to right,
+		#007cba 0%,
+		#007cba var(--range-progress, 50%),
+		#e0e0e0 var(--range-progress, 50%),
+		#e0e0e0 100%
+	);
+	outline: none;
+	cursor: pointer;
+}
+
+.gpm-range-input__slider:disabled {
+	cursor: not-allowed;
+}
+
+/* Webkit (Chrome, Safari, Edge) Thumb */
+.gpm-range-input__slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: white;
+	border: 2px solid #007cba;
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+	transition: all 0.15s ease;
+}
+
+.gpm-range-input__slider::-webkit-slider-thumb:hover {
+	transform: scale(1.1);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.gpm-range-input__slider:focus::-webkit-slider-thumb {
+	box-shadow: 0 0 0 3px rgba(0, 124, 186, 0.3);
+}
+
+.gpm-range-input__slider:disabled::-webkit-slider-thumb {
+	cursor: not-allowed;
+	background: #f5f5f5;
+	border-color: #ccc;
+}
+
+/* Firefox Thumb */
+.gpm-range-input__slider::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: white;
+	border: 2px solid #007cba;
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+	transition: all 0.15s ease;
+}
+
+.gpm-range-input__slider::-moz-range-thumb:hover {
+	transform: scale(1.1);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.gpm-range-input__slider:focus::-moz-range-thumb {
+	box-shadow: 0 0 0 3px rgba(0, 124, 186, 0.3);
+}
+
+.gpm-range-input__slider:disabled::-moz-range-thumb {
+	cursor: not-allowed;
+	background: #f5f5f5;
+	border-color: #ccc;
+}
+
+/* Firefox Track */
+.gpm-range-input__slider::-moz-range-track {
+	height: 8px;
+	border-radius: 4px;
+	background: #e0e0e0;
+}
+
+/* Marks */
+.gpm-range-input__marks {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 20px;
+	overflow: hidden;
+}
+
+.gpm-range-input__mark {
+	position: absolute;
+	transform: translateX(-50%);
+	font-size: 11px;
+	color: #888;
+	white-space: nowrap;
+}
+
+.gpm-range-input__mark--first {
+	transform: none;
+}
+
+.gpm-range-input__mark--last {
+	transform: translateX(-100%);
+}
+
+/* Help Text */
+.gpm-range-input__help {
+	margin: 8px 0 0 0;
+	font-size: 12px;
+	color: #666;
+	line-height: 1.5;
+}
+
+/* Gravity Forms Admin Context */
+body.gform-admin-screen .gpm-range-input__value {
+	color: #3985b7;
+	background: #e8f4fb;
+}
+
+body.gform-admin-screen .gpm-range-input__slider {
+	background: linear-gradient(
+		to right,
+		#3985b7 0%,
+		#3985b7 var(--range-progress, 50%),
+		#e0e0e0 var(--range-progress, 50%),
+		#e0e0e0 100%
+	);
+}
+
+body.gform-admin-screen .gpm-range-input__slider::-webkit-slider-thumb {
+	border-color: #3985b7;
+}
+
+body.gform-admin-screen .gpm-range-input__slider:focus::-webkit-slider-thumb {
+	box-shadow: 0 0.125rem 0.0675rem rgba(28, 31, 63, 0.0634624), 0 0 0 2px #bed8ed;
+}
+
+body.gform-admin-screen .gpm-range-input__slider::-moz-range-thumb {
+	border-color: #3985b7;
+}
+
+body.gform-admin-screen .gpm-range-input__slider:focus::-moz-range-thumb {
+	box-shadow: 0 0.125rem 0.0675rem rgba(28, 31, 63, 0.0634624), 0 0 0 2px #bed8ed;
+}
